@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Displaying Employee table data</h1>
+        <table style="margin: 30px; border: 5px dotted brown;">
+            <tr>
+                <th>empno</th>
+                <th>ename</th>
+                <th>job </th>
+                <th>mgr</th>
+                <th>hiredate</th>
+                <th>sal</th>
+                <th>comm</th>
+                <th>deptno</th>
+            </tr>
+        
+
+        {% for eo in QLEO %}
+        <tr>
+            <td>{{eo.empno}}</td>
+            <td>{{eo.ename}}</td>
+            <td>{{eo.job }}</td>
+            <td>{{eo.mgr}}</td>
+            <td>{{eo.hiredate}}</td>
+            <td>{{eo.sal}}</td>
+            <td>{{eo.comm}}</td>
+            <td>{{eo.deptno}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+     
+    </center>
+</body>
+</html>
